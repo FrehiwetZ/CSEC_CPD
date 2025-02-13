@@ -1,0 +1,12 @@
+n = int(input())  # Read the number of games
+games = input().strip()  # Read the game results
+
+anton_wins = games.count('A')
+danik_wins = games.count('D')
+
+if anton_wins > danik_wins:
+    print("Anton")
+elif danik_wins > anton_wins:
+    print("Danik")
+else:
+    print("Friendship")
