@@ -1,0 +1,9 @@
+L, B = map(int, input().split())  
+years = 0
+
+while L <= B:
+    L *= 3  # Limak's weight triples
+    B *= 2  # Bob's weight doubles
+    years += 1
+
+print(years)
